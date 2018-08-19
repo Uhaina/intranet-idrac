@@ -1,0 +1,75 @@
+@import "~styles/utils";
+
+div.header-component {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 15px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .25);
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 70px;
+  z-index: 35;
+
+  .header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 18px;
+
+    .header-item {
+      margin: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-decoration: none;
+      color: #0f2027;
+      padding-bottom: 10px;
+      transition: color .5s;
+
+      &:hover {
+        color: #D31027;
+      }
+
+      &.active{
+        color: #D31027;
+
+        border-bottom: 1px solid #D31027;
+      }
+    }
+  }
+
+  .header-out-website {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 14px;
+
+    .header-item {
+      margin: 10px;
+      text-decoration: none;
+      color: #6d6d6d;
+    }
+  }
+
+  img.logo-idrac {
+    height: 110px;
+  }
+
+  img.github-logo {
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  .outBox {
+    color: #6d6d6d;
+  }
+}
+
+.link-sidebar {
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+@import "~styles/utils";
+
+div.cours-page {
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: row;
+  z-index: 34;
+
+  .content-page {
+    width: 100%;
+    padding: 30px;
+  }
+}

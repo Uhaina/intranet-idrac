@@ -1,0 +1,87 @@
+@import "~styles/utils";
+
+div.home-page {
+  height: 100vh;
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image:url("/material-banner.jpg");
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      opacity: .8;
+    }
+
+    .boutton-get-started {
+      background-color: #c80b0e;
+      color: #000000;
+      padding: 10px 25px;
+      border-radius: 5px;
+      z-index: 5;
+      margin: 15px;
+      transition: background-color 0.3s;
+
+      &:hover{
+        background-color: #e5e5e5;
+      }
+    }
+
+    .typed-txt {
+      position: relative;
+      font-size: 2.5em;
+      padding: 0px 25px;
+      margin: 0;
+      color: #ffffff;
+      z-index: 1;
+      font-weight: 200;
+      text-shadow: 0px 0px 4px rgba(#656565, .8);
+      margin: 15px;
+    }
+
+    h1.title {
+      font-size: 3.5em;
+      color: #c80b0e;
+      z-index: 4;
+      margin: 5px;
+
+      span.react-title {
+        color: white;
+        opacity: .5;
+      }
+    }
+
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+      height: 80px;
+    }
+
+    @keyframes App-logo-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .link-to-cours {
+      z-index: 1;
+      text-decoration: none;
+    }
+
+  }
+}

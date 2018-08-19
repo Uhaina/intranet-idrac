@@ -1,0 +1,169 @@
+@import "~styles/utils";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+div.cours-home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p.cours-home-title {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #0f2027;
+}
+
+p.cours-home-txt {
+  font-size: 1em;
+}
+
+.lines {
+  fill: none;
+  stroke: #4d4d4d;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.schaum {
+  fill: #F15A24;
+}
+.outline {
+  fill: none;
+  stroke: #4d4d4d;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.beer {
+  fill: #FF00FF;
+}
+.handle {
+  fill: none;
+  stroke: #4d4d4d;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+/*** Animation ***/
+/* Outline */
+.outline {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: outlinedash 6s linear infinite;
+}
+
+@keyframes outlinedash {
+  5% {
+    stroke-dashoffset: 1500;
+  }
+  45% {
+    stroke-dashoffset: 0;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  95% {
+    stroke-dashoffset: 1500;
+  }
+}
+
+/* Handle */
+.handle {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: handledash 6s linear infinite;
+}
+
+@keyframes handledash {
+  10% {
+    stroke-dashoffset: 300;
+  }
+  20% {
+    stroke-dashoffset: 300;
+  }
+  23% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  77% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: 300;
+  }
+  90% {
+    stroke-dashoffset: 300;
+  }
+}
+
+/* Lines */
+.lines {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: linedash 6s linear infinite;
+}
+
+@keyframes linedash {
+  5% {
+    stroke-dashoffset: 100;
+  }
+  10% {
+    stroke-dashoffset: 0;
+  }
+  90% {
+    stroke-dashoffset: 0;
+  }
+  95% {
+    stroke-dashoffset: 100;
+  }
+}
+
+/* Schaum */
+.schaum {
+  fill: #ffffff;
+  animation: fillschaum 6s linear infinite;
+}
+
+@keyframes fillschaum {
+  40% {
+    fill: #ffffff;
+  }
+  45% {
+    fill: #ffffff;
+  }
+  55% {
+    fill: #ffff;
+  }
+  60% {
+    fill: #ffffff;
+  }
+}
+
+/* Beer */
+.beer {
+  fill: #ffffff;
+  animation: fillbeer 6s linear infinite;
+}
+@keyframes fillbeer {
+  40% {
+    fill: #ffffff;
+  }
+  45% {
+    fill: #DEB712;
+  }
+  55% {
+    fill: #DEB712;
+  }
+  60% {
+    fill: #ffffff;
+  }
+}

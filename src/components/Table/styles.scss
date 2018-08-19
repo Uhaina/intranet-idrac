@@ -1,0 +1,19 @@
+@import "~styles/utils";
+
+div.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+div.tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div.td {
+  width: 100%;
+  padding: 15px;
+}

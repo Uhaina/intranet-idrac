@@ -20,7 +20,7 @@ class Rendu extends React.Component {
           locale={'fr'}
           minTime={"08:00:00"}
           maxTime={"19:00:00"}
-          aspectRatio={3}
+          height={550}
           navLinks={true} // can click day/week names to navigate views
           editable={true}
           slotEventOverlap={true}

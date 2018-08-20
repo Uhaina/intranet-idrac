@@ -1,7 +1,10 @@
 @import "~styles/utils";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
 
 div.home-page {
   height: 100vh;
+  font-family: 'Montserrat';
 
   .banner {
     width: 100%;
@@ -51,13 +54,14 @@ div.home-page {
       margin: 0;
       color: #ffffff;
       z-index: 1;
-      font-weight: 200;
+      font-weight: 400;
       text-shadow: 0px 0px 4px rgba(#656565, .8);
       margin: 15px;
     }
 
     h1.title {
       font-size: 3.5em;
+      font-weight: 700;
       color: #c80b0e;
       z-index: 4;
       margin: 5px;

@@ -25,7 +25,7 @@ export default class extends React.Component {
           />
           <path className="lines" d="M196 480v82M250 480v82M304 480v82" />
         </svg>
-        <p className="cours-home-txt">Bienvenue sur l'espace de support de cours de la 5ème année de l'IDRAC. L'espace sera tenu à jour assez régulièrement via les délégué de chaques promo ! Enjoy 😁</p>
+        <p className="cours-home-txt">Bienvenue sur l'espace de support de cours de la 5ème année de l'IDRAC. L'espace sera tenu à jour assez régulièrement via les délégué de chaque spé ! Enjoy 😁</p>
       </div>
     );
   }

@@ -10,15 +10,10 @@ class AgendaInternational extends React.Component {
       <div className="agenda-semaine-component">
         <FullCalendar
           id = "your-custom-ID"
-          header = {{
-            left: 'prev,next today myCustomButton',
-            center: 'title',
-            right: 'month,basicWeek,basicDay'
-          }}
           locale={'fr'}
           minTime={"08:00:00"}
           maxTime={"19:00:00"}
-          aspectRatio={2.55}
+          height={500}
           navLinks={true} // can click day/week names to navigate views
           editable={true}
           slotEventOverlap={true}
@@ -28,7 +23,6 @@ class AgendaInternational extends React.Component {
           allDayText={'Today'}
           firstDay={1}
           weekends={false}
-          titleFormat={"MMMM D YYYY"}
           eventLimit={true} // allow "more" link when too many events
           events={agendaInternational}
           eventClick={ function(event) { alert(event.description) } }

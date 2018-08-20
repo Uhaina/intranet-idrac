@@ -30,4 +30,4 @@ Then, the build version will be generated in the /dist directory
 
 Thanks Pierro for the react starter !
 
-To see original starter : **[https://github.com/pierrecabriere/react-scss-starter-kit.git](https://github.com/pierrecabriere/react-scss-starter-kit.git)**
+To see the original starter : **[https://github.com/pierrecabriere/react-scss-starter-kit.git](https://github.com/pierrecabriere/react-scss-starter-kit.git)**

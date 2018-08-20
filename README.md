@@ -1,4 +1,5 @@
-# React Scss Starter-kit ⚡️
+# Intranet-IDRAC.fr
+## with React Scss Starter-kit ⚡️
 
 ---
 
@@ -8,8 +9,8 @@
 
 ## 1 - Installation
 ```
-git clone https://github.com/pierrecabriere/react-scss-starter-kit.git
-cd react-scss-starter-kit
+git clone https://github.com/Uhaina/intranet-idrac.git
+cd intrant-idrac
 npm install
 ```
 
@@ -24,3 +25,9 @@ Then, open your browser at **[http://localhost:3000/](http://localhost:3000/)**
 npm run build
 ```
 Then, the build version will be generated in the /dist directory
+
+--
+
+Thanks Pierro for the react starter !
+
+To see original starter : **[https://github.com/pierrecabriere/react-scss-starter-kit.git](https://github.com/pierrecabriere/react-scss-starter-kit.git)**

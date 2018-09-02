@@ -8,6 +8,10 @@ div.sidebar-cours-content {
   flex-direction: column;
   min-width: 200px;
 
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+
   p.sidebar-cours-title {
   font-size: 1.3em;
   padding-bottom: 10px;

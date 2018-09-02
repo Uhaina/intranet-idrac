@@ -7,6 +7,7 @@ import AgendaMarketing from "pages/Agenda-Marketing";
 import AgendaVente from "pages/Agenda-Vente";
 import AgendaHome from "pages/Agenda-Home";
 
+
 export default class extends React.Component {
   render = () => {
     return (
@@ -19,7 +20,7 @@ export default class extends React.Component {
             <Route exact path="/agenda/vente" component={AgendaVente} />
           </Switch>
         </div>
-        <SidebarAgenda />
+        <SidebarAgenda className="sidebar-mobile" />
       </div>
     );
   }

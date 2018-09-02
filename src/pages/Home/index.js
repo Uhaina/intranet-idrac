@@ -7,7 +7,7 @@ export default class extends React.Component {
     <div className="home-page">
       <div className="banner">
         <h1 className="title">IDR<span className="react-title">E</span>AC<span className="react-title">T</span></h1>
-        <img src="/logo.svg" className="App-logo" alt="logo" />
+        <img src="http://davidvelten.fr/cname/preprod-intranet-idrac/logo.svg" className="App-logo" alt="logo"/>
         <div className="typed-txt">
           L'espace étudiant de l'IDRAC Montpellier
         </div>

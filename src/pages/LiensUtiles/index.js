@@ -6,7 +6,7 @@ export default class extends React.Component {
     return (
       <div className="liens-utiles-content">
         <div className="browser-mockup with-url">
-          <img className="img-browser" src="/logo-usetool.png" />
+          <img className="img-browser" src="http://davidvelten.fr/cname/preprod-intranet-idrac/logo-usetool.png"/>
           <p className="baseline">Tous les outils que vous cherchez !</p>
         </div>
         <div className="credit-usetool">

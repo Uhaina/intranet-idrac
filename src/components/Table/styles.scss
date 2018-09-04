@@ -11,9 +11,17 @@ div.tr {
   width: 100%;
   display: flex;
   flex-direction: row;
+  text-align: center;
+  @media screen and (max-width: 700px) {
+    font-size: .7em;
+  }
 }
 
 div.td {
   width: 100%;
   padding: 15px;
+  text-align: center;
+  @media screen and (max-width: 700px) {
+    font-size: 1em;
+  }
 }

@@ -10,14 +10,14 @@ class CarnetAdresse extends React.Component {
         <Table>
           <Tr className="tr-entete">
             <Td>Nom</Td>
-            <Td>Matière</Td>
+            <Td className="second-column">Matière</Td>
             <Td>Adresse Mail</Td>
           </Tr>
           { listProfessors.map((professor) => {
             return (
               <Tr className="tr-tableau">
                 <Td className="td-tableau">{professor.name}</Td>
-                <Td className="td-tableau">{professor.mail}</Td>
+                <Td className="td-tableau second-column">{professor.mail}</Td>
                 <Td className="td-tableau">{professor.matiere}</Td>
               </Tr>
             );

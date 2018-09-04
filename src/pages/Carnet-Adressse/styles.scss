@@ -11,12 +11,18 @@ div.carnet-adresse-content {
   font-weight: 700;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .15);
   border-radius: 5px 5px 0px 0px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 1.5em;
+  }
 }
 
 .tr-tableau {
   border: thin solid #e5e5e5;
 }
 
-.td-tableau {
-  border: thin solid #6495ed;
+.second-column {
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }

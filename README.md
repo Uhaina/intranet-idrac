@@ -1,6 +1,9 @@
 # Intranet-IDRAC.fr
 ## with React Scss Starter-kit ⚡️
 
+Project for the intranet of my school. Developed in React with Sass.
+To use and run the project, you need to follow this steps :
+
 ---
 
 - [Installation](#1-installation)

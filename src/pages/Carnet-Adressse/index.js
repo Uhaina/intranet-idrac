@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import { listProfessors } from 'services/professors';
-import { Table, Tr, Td } from 'components/Table';
+import { listProfessors } from '../../services/professors';
+import { Table, Tr, Td } from '../../components/Table';
 
 class CarnetAdresse extends React.Component {
   render = () => {

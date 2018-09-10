@@ -4,7 +4,7 @@ import './styles.scss';
 import 'fullcalendar/dist/locale/fr.js';
 import FullCalendar from 'fullcalendar-reactwrapper';
 
-import { agendaRendu } from 'services/agenda-rendu';
+import { agendaRendu } from '../../services/agenda-rendu';
 
 class Rendu extends React.Component {
   render() {

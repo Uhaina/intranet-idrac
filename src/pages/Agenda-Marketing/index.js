@@ -1,5 +1,5 @@
 import React from 'react';
-import { agendaMarketing } from "services/agenda-marketing";
+import { agendaMarketing } from "../../services/agenda-marketing";
 
 import 'fullcalendar/dist/locale/fr.js';
 import FullCalendar from 'fullcalendar-reactwrapper';

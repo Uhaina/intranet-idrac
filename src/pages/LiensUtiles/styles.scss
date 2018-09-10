@@ -17,11 +17,17 @@ div.liens-utiles-content {
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
   position: relative;
   border-radius: 3px 3px 0 0;
-  height: 300px;
-  width: 500px;
+  height: 250px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+   height: 150px;
+   width: 250px;
+  }
+
 }
 
 .browser-mockup:before {
@@ -49,11 +55,18 @@ div.liens-utiles-content {
 }
 
 img.img-browser {
-  width: 350px;
+  width: 300px;
+  @media screen and (max-width: 700px) {
+    width: 175px;
+  }
 }
 
 div.credit-usetool {
   margin-top: 25px;
+
+  @media screen and (max-width: 700px) {
+    font-size: .8em;
+  }
 
   a {
   text-decoration: none;
@@ -67,4 +80,36 @@ p.baseline {
   font-weight: 700;
   color: #D31027;
   font-size: 1.5em;
+  @media screen and (max-width: 700px) {
+    font-size: .7em;
+    margin-top: 15px;
+  }
+}
+
+p.description {
+  margin-top: 0px;
+  font-size: .8em;
+  padding: 5px;
+  text-align: center;
+  @media screen and (max-width: 700px) {
+    font-size: .55em;
+  }
+}
+
+div.avatars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+  img.avatars-usetools {
+    height: 100px;
+    margin: 15px 15px;
+    transition: opacity .4s;
+
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+  }
 }

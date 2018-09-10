@@ -1,0 +1,37 @@
+@import "~styles/utils";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+div.sidebar-responsive-content {
+  display: none;
+
+  .sidebar-responsive-item {
+    text-decoration: none;
+    color: #0f2027;
+    margin: 3px 15px;
+    padding-bottom: 5px;
+    font-family: Montserrat;
+    font-size: .8em;
+    transition: color .4s;
+
+    &:hover {
+      color: #c94e50;
+    }
+
+    &.active {
+      color: #D31027;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: solid 1px #0f2027;
+  }
+}

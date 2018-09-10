@@ -1,9 +1,12 @@
 @import "~styles/utils";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
-div.sidebar-cours-content {
+
+div.sidebar-content {
   background-color: rgb(247, 247, 247);
   border-left: 1px solid rgb(236, 236, 236);
   padding: 30px;
+  font-family: Montserrat;
   display: flex;
   flex-direction: column;
   min-width: 200px;
@@ -12,7 +15,7 @@ div.sidebar-cours-content {
     display: none;
   }
 
-  p.sidebar-cours-title {
+  p.sidebar-title {
   font-size: 1.3em;
   padding-bottom: 10px;
   color: #000000;
@@ -20,7 +23,7 @@ div.sidebar-cours-content {
   border-bottom: 1px solid #D31027;
 }
 
-  .sidebar-cours-item {
+  .sidebar-item {
     font-size: 1.2em;
     text-decoration: none;
     margin: 15px 0px;
@@ -33,4 +36,7 @@ div.sidebar-cours-content {
       border-left: 2px solid #D31027;
     }
   }
+}
+
+div.footer {
 }

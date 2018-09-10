@@ -12,9 +12,9 @@ export default class extends React.Component {
           L'espace étudiant de l'IDRAC Montpellier
         </div>
         <Link className="link-to-cours" to="/cours">
-        <div className="boutton-get-started">
-          <code>Accès aux cours</code>
-        </div>
+          <div className="boutton-get-started">
+            <code>Accès aux cours</code>
+          </div>
         </Link>
       </div>
     </div>

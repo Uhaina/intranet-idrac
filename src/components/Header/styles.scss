@@ -1,7 +1,6 @@
 @import "~styles/utils";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
-
 div.header-component-responsive {
   position: fixed;
   //background-image:url("http://davidvelten.fr/cname/preprod-intranet-idrac/material-banner.jpg");
@@ -53,10 +52,15 @@ div.header-component-content {
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .25);
   align-items: center;
   justify-content: space-between;
+  font-family: Montserrat;
   margin: 0;
   height: 70px;
   z-index: 300;
   position: relative;
+
+  @media screen and (max-width: 700px) {
+    height: 65px;
+  }
 
   .header-navigation {
     display: flex;
@@ -111,6 +115,9 @@ div.header-component-content {
 
   img.logo-idrac {
     height: 110px;
+    @media screen and (max-width: 700px) {
+      height: 90px;
+    }
   }
 
   img.github-logo {
@@ -127,17 +134,17 @@ div.header-component-content {
   .outBox {
     color: #6d6d6d;
   }
-}
 
-.link-sidebar {
-  text-decoration: none;
-}
+  .link-sidebar {
+    text-decoration: none;
+  }
 
-.menu-mobile {
-  display: none;
-  cursor: pointer;
+  .menu-mobile {
+    display: none;
+    cursor: pointer;
 
-  @media screen and (max-width: 700px) {
-    display: inline;
+    @media screen and (max-width: 700px) {
+      display: inline;
+    }
   }
 }

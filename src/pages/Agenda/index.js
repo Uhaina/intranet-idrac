@@ -1,11 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import SidebarAgenda from "components/Sidebar-Agenda";
-import AgendaInternational from "pages/Agenda-International";
-import AgendaMarketing from "pages/Agenda-Marketing";
-import AgendaVente from "pages/Agenda-Vente";
-import AgendaHome from "pages/Agenda-Home";
+import Sidebar from "../../components/Sidebar";
+import AgendaInternational from "../../pages/Agenda-International";
+import AgendaMarketing from "../../pages/Agenda-Marketing";
+import AgendaVente from "../../pages/Agenda-Vente";
+import AgendaHome from "../../pages/Agenda-Home";
+import SidebarResponsive from "../../components/Sidebar-responsive";
 
 
 export default class extends React.Component {
@@ -13,6 +14,7 @@ export default class extends React.Component {
     return (
       <div className="cours-page">
         <div className="content-page">
+          <SidebarResponsive prefixe={"/agenda"} />
           <Switch>
             <Route exact path="/agenda" component={AgendaHome} />
             <Route exact path="/agenda/international" component={AgendaInternational} />
@@ -20,7 +22,10 @@ export default class extends React.Component {
             <Route exact path="/agenda/vente" component={AgendaVente} />
           </Switch>
         </div>
-        <SidebarAgenda className="sidebar-mobile" />
+        <Sidebar
+          title={"Agenda par Spé"}
+          prefixe={"/agenda"}
+        />
       </div>
     );
   }

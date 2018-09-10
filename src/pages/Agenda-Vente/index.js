@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 
-import { agendaVente } from 'services/agenda-vente';
+import { agendaVente } from '../../services/agenda-vente';
 
 import 'fullcalendar/dist/locale/fr.js';
 import FullCalendar from 'fullcalendar-reactwrapper';
